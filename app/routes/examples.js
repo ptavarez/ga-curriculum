@@ -9,6 +9,9 @@ export default Route.extend({
     createExample (example) {
       this.get('store').createRecord('example', example)
         .save()
+    },
+    deleteExample (example) {
+      example.destroyRecord()
     }
   }
 })
