@@ -6,9 +6,9 @@ export default Component.extend({
   },
 
   actions: {
-    createExample () {
-      this.sendAction('create', this.get('example'))
-      this.set('example', {})
+    updateExample () {
+      console.log(this.get('example'))
+      this.sendAction('update', this.get('example'))
     }
   }
 })

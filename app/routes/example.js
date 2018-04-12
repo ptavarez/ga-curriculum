@@ -9,6 +9,9 @@ export default Route.extend({
     deleteExample (example) {
       example.destroyRecord()
         .then(() => this.transitionTo('examples'))
+    },
+    updateExample (example) {
+      example.save()
     }
   }
 })
