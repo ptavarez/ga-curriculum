@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('users')
   this.route('examples')
   this.route('example', { path: '/examples/:example_id' })
+  this.route('week-one-repos')
 })
 
 export default Router
