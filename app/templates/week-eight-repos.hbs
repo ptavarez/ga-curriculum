@@ -1,0 +1,10 @@
+<h3>Week Eight</h3>
+
+{{#each model as |repo|}}
+<h4>{{repo.name}}</h4>
+<ul>
+  <li>Day: {{repo.day}}</li>
+  <li>Category: {{repo.category}}</li>
+  <li><a href="{{repo.repo_url}}">Link To Repo</a></li>
+</ul>
+{{/each}}
